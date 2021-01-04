@@ -47,18 +47,19 @@ const  App =()=> {
   
   return (
     <div className="App">
-      <form onSubmit={getSearch}>
+      <form  className="search-form"  onSubmit={getSearch} >
       <input
+      className ="search-bar"
         type='text'
         value={search}
         // same its working also annynomous function to pass by onChange
         // onChange = {(e)=>{setSearch(e.target.value); console.log(search) } }
         onChange = {updatedSearch}
        />
-       <button>search</button>
+       <button className="search-button" >search</button>
       </form>
       {/* <h2 onClick={()=> setCounter(counter + 1)}>{counter}</h2> */}
-
+      <div className="recipes">
       {recipes.map(recipe => (
         <Recipe
         key={recipe.recipe.label}
@@ -68,6 +69,9 @@ const  App =()=> {
          ingredients = {recipe.recipe.ingredients}
          />
       ))}
+
+      </div>
+
       
 
 
