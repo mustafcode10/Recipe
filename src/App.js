@@ -7,7 +7,7 @@ const  App =()=> {
   // const [counter, setCounter]= useState(0)
   const [recipes, setRecipes] = useState([])
   const [search, setSearch] = useState('')
-  const [query, setQuery] =  useState('chicken')
+  const [query, setQuery] =  useState('fish')
 
 
   const APP_ID = 'b69a2c0e'
